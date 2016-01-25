@@ -29,5 +29,7 @@ bower_components
 .lock-wscript
 
 # Intermediary files
+vendor
 
 # Distribution files
+client.js

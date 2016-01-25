@@ -1,6 +1,6 @@
-var requireHooks = require("@auex/utilities").env.requireHooks;
+var registerHooks = require("@auex/utilities").env.requireHooks.registerHooks;
 
 // Allows to require JSON5, ES2015+ and JSX files.
-requireHooks.registerHooks(["babel"]);
+registerHooks();
 
 module.exports = require("./make-webpack-config");
