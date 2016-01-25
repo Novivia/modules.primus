@@ -1,0 +1,57 @@
+{
+  "name": "@auex/primus",
+  "role": "websockets-primus",
+  "version": "0.0.1",
+  "private": true,
+  "license": "SEE LICENSE IN LICENSE.md",
+  "description": "Provides the Primus library for AuctionEx.",
+  "authors": [
+    "Mathieu M-Gosselin <mathieumg@novivia.com>",
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git.novivia.com/auex/modules.primus"
+  },
+  "scripts": {
+    "build": "webpack --progress --colors",
+    "lint": "eslint-myrules lint"
+  },
+  // "eslint-myrules": {
+  //   "targets": {
+  //     "global": ["webpack"],
+  //     "frontend": ["app", "loader"]
+  //   },
+  // },
+  "devDependencies": {
+    // AuctionEx dependencies.
+    "@auex/eslint-myrules": "^0.6.3",
+  },
+  "dependencies": {
+    // AuctionEx dependencies.
+    "@auex/configurations": "^0.2.0",
+    "@auex/react-components": "^0.9.0",
+    "@auex/utilities": "^0.3.2",
+
+    // npm dependencies.
+    "babel-core": "^6.4.5",
+    "babel-loader": "^6.2.1",
+    "babel-plugin-add-module-exports": "^0.1.2",
+    "babel-plugin-react-transform": "^2.0.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-runtime": "^6.4.3",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "babel-runtime": "^6.3.19",
+    "exports-loader": "^0.6.2",
+    "imports-loader": "^0.6.5",
+    "primus": "4.0.5",
+    "primus-emitter": "3.1.1",
+    "primus-multiplex": "3.2.0",
+    "primus-resource": "2.0.6",
+    "sockjs": "^0.3.15",
+    "sockjs-client": "^1.0.3",
+    "webpack": "^1.12.11",
+    "webpack-dev-server": "^1.14.1",
+  }
+}
