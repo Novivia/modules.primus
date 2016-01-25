@@ -1,0 +1,48 @@
+{
+  "name": "@auex/primus",
+  "role": "websockets-primus",
+  "version": "0.1.0",
+  "publishConfig": {
+    "registry": "https://npm.novivia.com"
+  },
+  "license": "SEE LICENSE IN LICENSE.md",
+  "description": "Provides the Primus library for AuctionEx.",
+  "authors": [
+    "Mathieu M-Gosselin <mathieumg@novivia.com>",
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git.novivia.com/auex/modules.primus"
+  },
+  "scripts": {
+    "build": "webpack --progress --colors && build-module build -p client.js",
+    "lint": "eslint-myrules lint",
+    "pub": "build-module publish",
+    "release": "build-module release",
+  },
+  "eslint-myrules": {
+    "targets": {
+      "global": ["index.js"],
+    },
+  },
+  "devDependencies": {
+    // AuctionEx dependencies.
+    "@auex/build-module": "^0.2.4",
+    "@auex/eslint-myrules": "^0.6.3",
+    "@auex/utilities": "^0.3.2",
+
+    // npm dependencies.
+    "exports-loader": "^0.6.2",
+    "fs-extra": "^0.26.4",
+    "script-loader": "^0.6.1",
+    "webpack": "^1.12.12",
+  },
+  "dependencies": {
+    // npm dependencies.
+    "primus": "4.0.5",
+    "primus-emitter": "3.1.1",
+    "primus-multiplex": "3.2.0",
+    "primus-resource": "2.0.6",
+    "sockjs": "0.3.15",
+  }
+}
