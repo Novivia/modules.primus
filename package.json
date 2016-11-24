@@ -2,52 +2,47 @@
   "name": "@novivia/primus",
   "role": "websockets-primus",
   "version": "0.3.0",
-  "publishConfig": {
-    "registry": "https://npm.novivia.com",
-  },
   "license": "SEE LICENSE IN LICENSE.md",
   "description": "Provides the Primus library for Novivia projects.",
   "authors": [
-    "Mathieu M-Gosselin <mathieumg@novivia.com>",
+    "Mathieu M-Gosselin <mathieumg@novivia.com>"
   ],
   "repository": {
     "type": "git",
-    "url": "git+ssh://git.novivia.com/nov/modules.primus",
+    "url": "git@github.com:Novivia/modules.primus.git"
   },
   "scripts": {
     "build": "webpack --progress --colors && novivia-builder build",
     "lint": "novivia-linter lint",
-    "open-source": "open-source",
     "pub": "novivia-builder publish",
-    "release": "novivia-builder release",
+    "release": "novivia-builder release"
   },
   "novivia-builder": {
-    "packagePatterns": ["client.js"],
+    "packagePatterns": [
+      "client.js"
+    ]
   },
   "novivia-linter": {
     "targets": {
-      "global": ["index.js"],
-    },
+      "global": [
+        "index.js"
+      ]
+    }
   },
   "devDependencies": {
-    // Novivia dependencies.
     "@novivia/babel": "0.0.5",
     "@novivia/build-module": "^0.5.1",
     "@novivia/linter": "^1.8.1",
-    "@novivia/open-sourcer": "^0.1.1",
-
-    // npm dependencies.
     "exports-loader": "^0.6.3",
     "fs-extra": "^1.0.0",
     "script-loader": "^0.7.0",
-    "webpack": "^1.13.3",
+    "webpack": "^1.13.3"
   },
   "dependencies": {
-    // npm dependencies.
     "primus": "6.0.5",
     "primus-emitter": "3.1.1",
     "primus-multiplex": "3.2.1",
     "primus-resource": "2.0.6",
-    "sockjs": "0.3.18",
-  },
+    "sockjs": "0.3.18"
+  }
 }
