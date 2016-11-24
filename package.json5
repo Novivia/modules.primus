@@ -1,7 +1,7 @@
 {
   "name": "@novivia/primus",
   "role": "websockets-primus",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "publishConfig": {
     "registry": "https://npm.novivia.com",
   },
