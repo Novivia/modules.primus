@@ -31,20 +31,20 @@
   },
   "devDependencies": {
     // Novivia dependencies.
-    "@novivia/babel": "0.0.5",
-    "@novivia/build-module": "^0.5.1",
-    "@novivia/linter": "^1.8.1",
-    "@novivia/open-sourcer": "^0.1.1",
+    "@novivia/babel": "1.0.2",
+    "@novivia/build-module": "^0.5.2",
+    "@novivia/linter": "^1.10.1",
+    "@novivia/open-sourcer": "^0.1.2",
 
     // npm dependencies.
-    "exports-loader": "^0.6.3",
-    "fs-extra": "^1.0.0",
+    "exports-loader": "^0.6.4",
+    "fs-extra": "^3.0.0",
     "script-loader": "^0.7.0",
     "webpack": "^1.13.3",
   },
   "dependencies": {
     // npm dependencies.
-    "primus": "6.0.5",
+    "primus": "7.0.1",
     "primus-emitter": "3.1.1",
     "primus-multiplex": "3.2.1",
     "primus-resource": "2.0.6",
